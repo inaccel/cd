@@ -1,0 +1,27 @@
+diff:
+  comparePatches:
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: ValidatingWebhookConfiguration
+    name: config.webhook.serving.knative.dev
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: ValidatingWebhookConfiguration
+    name: validation.webhook.domainmapping.serving.knative.dev
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: ValidatingWebhookConfiguration
+    name: validation.webhook.serving.knative.dev
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: MutatingWebhookConfiguration
+    name: webhook.domainmapping.serving.knative.dev
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: MutatingWebhookConfiguration
+    name: webhook.serving.knative.dev
