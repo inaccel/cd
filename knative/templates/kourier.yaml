@@ -479,6 +479,9 @@ metadata:
     app.kubernetes.io/component: net-kourier
     app.kubernetes.io/version: "1.7.0"
     app.kubernetes.io/name: knative-serving
+  annotations:
+    cloudprovider.harvesterhci.io/healthcheck-port: "80"
+    cloudprovider.harvesterhci.io/ipam: dhcp
 spec:
   ports:
     - name: http2
