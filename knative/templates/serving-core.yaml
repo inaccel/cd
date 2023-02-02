@@ -1542,7 +1542,6 @@ data:
     # NOTE: This flag is in an alpha state and is mostly here to enable internal testing
     #       for now. Use with caution.
     internal-encryption: "false"
-  ingress-class: kourier.ingress.networking.knative.dev
 
 ---
 # Copyright 2018 The Knative Authors
