@@ -1,0 +1,27 @@
+diff:
+  comparePatches:
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: ValidatingWebhookConfiguration
+    name: inferencegraph.serving.kserve.io
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: MutatingWebhookConfiguration
+    name: inferenceservice.serving.kserve.io
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: ValidatingWebhookConfiguration
+    name: inferenceservice.serving.kserve.io
+  - apiVersion: v1
+    jsonPointers:
+    - /metadata
+    kind: ServiceAccount
+    name: kserve-controller-manager
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: ValidatingWebhookConfiguration
+    name: trainedmodel.serving.kserve.io
