@@ -500,7 +500,7 @@ data:
     }
   storageInitializer: |-
     {
-        "image" : "kserve/storage-initializer:v0.10.0",
+        "image" : "inaccel/kserve-storage-initializer:v0.10.0",
         "memoryRequest": "100Mi",
         "memoryLimit": "1Gi",
         "cpuRequest": "100m",
@@ -602,7 +602,7 @@ spec:
               fieldPath: metadata.namespace
         - name: SECRET_NAME
           value: kserve-webhook-server-cert
-        image: kserve/kserve-controller:v0.10.0
+        image: inaccel/kserve-controller:v0.10.0
         imagePullPolicy: Always
         name: manager
         ports:
