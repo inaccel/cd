@@ -1113,6 +1113,7 @@ data:
     #
     # NOTE THAT THIS IS AN EXPERIMENTAL / ALPHA FEATURE
     queueproxy.mount-podinfo: "disabled"
+  kubernetes.podspec-init-containers: enabled
   kubernetes.podspec-nodeselector: enabled
 
 ---
