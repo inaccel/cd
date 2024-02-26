@@ -1,0 +1,12 @@
+diff:
+  comparePatches:
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: MutatingWebhookConfiguration
+    name: defaults.webhook.kpack.io
+  - apiVersion: admissionregistration.k8s.io/v1
+    jsonPointers:
+    - /webhooks
+    kind: ValidatingWebhookConfiguration
+    name: validation.webhook.kpack.io
